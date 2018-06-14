@@ -116,6 +116,12 @@
     <script>
         function changeBackgroundImage(imgPath) {
             document.body.style.backgroundImage = imgPath;
+
+            $(".kalsec").each(function (i) {
+                        $(this).css({
+                            backgroundImage: imgPath
+                        });
+                    });
         }
     </script>
 
