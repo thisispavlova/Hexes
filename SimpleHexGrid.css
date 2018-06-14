@@ -2,14 +2,14 @@ html {
     text-align: center;
     
   }
-  
+ 
   .hex {
     display: inline-block;
     width: 260px;
     height: 150px;
     margin: 47px 10px;
-    filter: blur(5px);
-   }
+    filter: blur(4px);
+     }
 
   .hex:hover {
     filter: blur(0px);
@@ -40,7 +40,7 @@ html {
    opacity: 0.83;
    width: 87%;  
    height: 50%; 
-   position: relative;
+   position: fixed;
    bottom: 50%; 
    right: 5%;
    left: 5%;
@@ -50,9 +50,34 @@ html {
   }
   .BlockOfHexes {
     
-    position: relative;
-    
-    align-content: center;
-    top: 1%;
-
+    position: fixed;
+    bottom: 30px; 
+    right:20px;
+    left:20px;
+    top: 630px;
   }
+  
+  .headblock {
+   background-color: aliceblue; opacity: 0.35;
+   box-shadow: inset 0 0 30px cyan;
+   border-radius: 13px;
+   height: 58px;
+   width: 90%;
+   position: fixed;
+   right: 5%;
+   left: 5%;
+   top: 1%;
+   z-index: 1;
+  }
+
+
+
+ .title {
+  margin: 0 auto;
+  top: 13px;
+  z-index: 2;
+  position: relative;
+
+}
+
+  
