@@ -1,0 +1,58 @@
+html {
+    text-align: center;
+    
+  }
+  
+  .hex {
+    display: inline-block;
+    width: 260px;
+    height: 150px;
+    margin: 47px 10px;
+    filter: blur(5px);
+   }
+
+  .hex:hover {
+    filter: blur(0px);
+  }
+
+  .hex:after, .hex:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 260px;
+    height: 150px;
+    background: inherit;
+  
+    
+  }
+  .hex:after {
+    transform: rotate(60deg);
+  
+  }
+  .hex:before {
+    transform: rotate(-60deg);
+  
+  }
+ 
+  .BlackBlock {
+   background-color: black; 
+   filter: blur(1px) ;
+   opacity: 0.83;
+   width: 87%;  
+   height: 50%; 
+   position: relative;
+   bottom: 50%; 
+   right: 5%;
+   left: 5%;
+   top: 45%;
+   border-radius: 30px;
+
+  }
+  .BlockOfHexes {
+    
+    position: relative;
+    
+    align-content: center;
+    top: 1%;
+
+  }
