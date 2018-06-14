@@ -1,19 +1,80 @@
 <html>
 
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
 
 <body class="BackGroundImage" style="background-image: url(/Users/Anastasia/Desktop/N/Pix/japanese-seamless-pattern-cut-out-from-paper_1110-1082.jpg)">
     <div class="headblock">
-        
+
     </div>
     <h1 class="title">
-            The Hex Exciting Palette
-        </h1>
-
- 
+        The Hex Exciting Palette
+    </h1>
 
     <link rel='StyleSheet' type='text/css' href='SimpleHexGrid.css' />
 
     <div class="BlackBlock"></div>
+
+
+    <script>
+        $(document).ready(function () {
+            $(".kaleid_cont").each(function (i) {
+                $(this).mousemove(function (e) {
+                    $(this).find(".kalsec").each(function (i) {
+                        $(this).css({
+                            backgroundPosition: e.pageX + "px " + e.pageY + "px"
+                        });
+                    });
+                });
+            });
+        });
+    </script>
+
+    <link rel='StyleSheet' type='text/css' href='simple-kaleid.css' />
+    <div class="container">
+        <div class="kaleid_main">
+            <div class="kaleid_cont">
+                <div class="kal sec1">
+                    <div class="kalsec"></div>
+                </div>
+                <div class="kal sec2">
+                    <div class="kalsec"></div>
+                </div>
+                <div class="kal sec3">
+                    <div class="kalsec"></div>
+                </div>
+                <div class="kal sec4">
+                    <div class="kalsec"></div>
+                </div>
+                <div class="kal sec5">
+                    <div class="kalsec"></div>
+                </div>
+                <div class="kal sec6">
+                    <div class="kalsec"></div>
+                </div>
+                <div class="kal sec7">
+                    <div class="kalsec"></div>
+                </div>
+                <div class="kal sec8">
+                    <div class="kalsec"></div>
+                </div>
+                <div class="kal sec9">
+                    <div class="kalsec"></div>
+                </div>
+                <div class="kal sec10">
+                    <div class="kalsec"></div>
+                </div>
+                <div class="kal sec11">
+                    <div class="kalsec"></div>
+                </div>
+                <div class="kal sec12">
+                    <div class="kalsec"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="BlockOfHexes">
 
