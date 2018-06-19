@@ -81,7 +81,8 @@ html {
   top: 20px;
   z-index: 2;
   position: relative;
-
+  font-style: initial;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
   

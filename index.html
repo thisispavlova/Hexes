@@ -4,12 +4,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
-<body class="BackGroundImage" style="background-image: url(images/japanese-seamless-pattern-cut-out-from-paper_1110-1082.jpg)">
+<body class="BackGroundImage" style="background-image: url(/Users/Anastasia/Desktop/N/Pix/e96c38a58b1a9dd5406f421c580bfe65.jpg)">
     <div class="headblock">
 
     </div>
     <h1 class="title">
-        The Hex Exciting Palette
+        Press the hex and watch what's next
     </h1>
 
     <link rel='StyleSheet' type='text/css' href='SimpleHexGrid.css' />
@@ -81,8 +81,8 @@
         <div class="hex" class="water" style="background-image: url(images/cce5d44b6956302f5908eb334270b106.jpg)"
             onclick="changeBackgroundImage('url(images/cce5d44b6956302f5908eb334270b106.jpg)');">
         </div>
-        <div class="hex" class="dark" style="background-image: url(images/1b972cd8e8713d22c11d934542dd4a1c.jpg)"
-            onclick="changeBackgroundImage('url(images/1b972cd8e8713d22c11d934542dd4a1c.jpg)');">
+        <div class="hex" class="dark" style="background-image: url(/Users/Anastasia/Desktop/N/Pix/6b5c1d5deafb5771202fda0338f93ec6.jpg)"
+            onclick="changeBackgroundImage('url(/Users/Anastasia/Desktop/N/Pix/6b5c1d5deafb5771202fda0338f93ec6.jpg)');">
         </div>
         <div class="hex" class="rainbow" style="background-image: url(images/892046faaa8323650333b72c1ce4fc7c.jpg)"
             onclick="changeBackgroundImage('url(images/892046faaa8323650333b72c1ce4fc7c.jpg)');">
@@ -114,14 +114,12 @@
 
 
     <script>
-        function changeBackgroundImage(imgPath) {
-            document.body.style.backgroundImage = imgPath;
+        function changeBackgroundImage(imagePath) {
+            document.body.style.backgroundImage = imagePath;
 
-            $(".kalsec").each(function (i) {
-                        $(this).css({
-                            backgroundImage: imgPath
-                        });
-                    });
+            document.querySelectorAll('.kalsec').forEach(function(kaleid_element) {
+                kaleid_element.style.backgroundImage = imagePath;
+            });
         }
     </script>
 
